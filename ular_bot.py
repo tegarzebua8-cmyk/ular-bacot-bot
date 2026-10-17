@@ -1,8 +1,9 @@
 import random
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "8606724268:AAEGtZaSUItiQnTrhXhza7vuBGbEjr60I0I"
+TOKEN = os.getenv("BOT_TOKEN")
 TANGGA = {4: 25, 13: 46, 33: 49, 42: 63, 50: 69, 62: 81, 74: 92}
 ULAR = {27: 5, 40: 3, 43: 18, 54: 31, 66: 45, 76: 58, 89: 53, 99: 41}
 TRUTH = ["Stalking mantan terakhir kapan?", "Suka siapa di grup ini?", "Rahasia yang belum orang tau?"]
